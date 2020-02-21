@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		
+		<!-- IE8标准渲染 -->
+		<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+		
+		<!-- 视窗格式 -->
+		<meta name="viewport" content="device-width,inital-scale=1,user-scalable=no"/>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		
+		<!-- 自定义css样式 -->
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<title>现代科技</title>
+	</head>
+	<body>
+		
+		<!-- 导航 -->
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.html">科研资源管理共享平台</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <form class="navbar-form navbar-left">  <!-- 搜素栏 -->
+		        <div class="col-lg-12">
+		            <div class="input-group">
+						<span class="input-group-addon glyphicon glyphicon-search" id="sizing-addon1"></span>
+						<input type="text" class="form-control" placeholder="站内搜索">
+						<span class="input-group-btn">
+							<a href="search.html" class="btn btn-default" type="button">搜索</a>
+						</span>
+		            </div><!-- /input-group -->
+		        </div><!-- /.col-lg-6 -->
+		      </form>
+		      <ul class="nav navbar-nav">
+		        <li><a href="#">高级搜素 <span class="sr-only">(current)</span></a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 用户名</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<section id="page">
+			<container id="content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9">
+							<div>
+							  <!-- Nav tabs -->
+							  <ul class="nav nav-tabs" role="tablist">
+							    <li role="presentation" class="active"><a href="#my" aria-controls="my program" role="tab" data-toggle="tab">我的项目</a></li>
+							    <li role="presentation"><a href="#department" aria-controls="department program" role="tab" data-toggle="tab">部门项目</a></li>
+							    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">全院项目</a></li>
+							    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">统计信息</a></li>
+								<li role="presentation"><a href="#system" aria-controls="settings" role="tab" data-toggle="tab">信息系统</a></li>
+							  </ul>
+							
+							  <!-- Tab panes -->
+							  <div class="tab-content" id="tabcontent">
+							    <div role="tabpanel" class="tab-pane active" id="my">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-inline">
+												<strong>排序：</strong>
+												<select class="form-control btn btn-default">
+												  <option><a href="">按计划开始时间排序</a></option>
+												  <option><a href="">按计划结束时间排序</a></option>
+												</select>
+												
+												
+												
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<table class="table">
+												<thead>
+													<tr>
+													<th>项目编号</th>
+													<th>项目名称</th>
+													<th>计划开始时间</th>
+													<th>计划结束时间</th>
+													<th>项目状态</th>
+												</tr>
+												</thead>
+												
+												<tr>
+													<td>20150001</td>
+													<td><a>深圳市标准信息公共服务平台————标准综合应用服务门户</a></td>
+													<td>2015-03-02</td>
+													<td>2015-06-01</td>
+													<td><button class="btn btn-success btn-xs" type="submit">正在进行</button></td>
+												</tr>
+												<tr>
+													<td>20150002</td>
+													<td><a>跨资源统一标准信息检索平台</a></td>
+													<td>2015-03-02</td>
+													<td>2015-08-06</td>
+													<td><button class="btn btn-danger btn-xs" type="submit">已经延期</button></td>
+												</tr>
+												<tr>
+													<td>20150003</td>
+													<td><a>公文调度站场智能化配套设施技术规范</a></td>
+													<td>2015-10-12</td>
+													<td>2016-01-08</td>
+													<td><button class="btn btn-primary btn-xs" type="submit">已经结束</button></td>
+												</tr>
+												<tr>
+													<td>20150001</td>
+													<td><a>深圳市标准信息公共服务平台————标准综合应用服务门户</a></td>
+													<td>2015-03-02</td>
+													<td>2015-06-01</td>
+													<td><button class="btn btn-success btn-xs" type="submit">正在进行</button></td>
+												</tr>
+												<tr>
+													<td>20150002</td>
+													<td><a>跨资源统一标准信息检索平台</a></td>
+													<td>2015-03-02</td>
+													<td>2015-08-06</td>
+													<td><button class="btn btn-danger btn-xs" type="submit">已经延期</button></td>
+												</tr>
+												<tr>
+													<td>20150003</td>
+													<td><a>公文调度站场智能化配套设施技术规范</a></td>
+													<td>2015-10-12</td>
+													<td>2016-01-08</td>
+													<td><button class="btn btn-primary btn-xs" type="submit">已经结束</button></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							    <div role="tabpanel" class="tab-pane" id="department">
+									<div class="row">
+										<div class="col-md-12">
+											<p id="dep">我的部门：标研中心</p>
+											<div class="form-inline">
+												<strong>排序：</strong>
+												<select class="form-control btn btn-default">
+												  <option><a href="">按计划开始时间排序 &nbsp;&nbsp;&nbsp;</a></option>
+												  <option><a href="">按计划结束时间排序 &nbsp;&nbsp;&nbsp;</a></option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<table class="table">
+												<thead>
+													<tr>
+													<th>项目编号</th>
+													<th>项目名称</th>
+													<th>计划开始时间</th>
+													<th>计划结束时间</th>
+													<th>项目状态</th>
+												</tr>
+												</thead>
+												
+												<tr>
+													<td>20150001</td>
+													<td><a>深圳市标准信息公共服务平台————标准综合应用服务门户</a></td>
+													<td>2015-03-02</td>
+													<td>2015-06-01</td>
+													<td><button class="btn btn-success btn-xs" type="submit">正在进行</button></td>
+												</tr>
+												<tr>
+													<td>20150002</td>
+													<td><a>跨资源统一标准信息检索平台</a></td>
+													<td>2015-03-02</td>
+													<td>2015-08-06</td>
+													<td><button class="btn btn-danger btn-xs" type="submit">已经延期</button></td>
+												</tr>
+												<tr>
+													<td>20150003</td>
+													<td><a>公文调度站场智能化配套设施技术规范</a></td>
+													<td>2015-10-12</td>
+													<td>2016-01-08</td>
+													<td><button class="btn btn-primary btn-xs" type="submit">已经结束</button></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<a href="#" class="btn btn-default">&gt;&gt;查看所有</a>
+								</div>
+							    <div role="tabpanel" class="tab-pane" id="messages">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-inline">
+												<strong>排序：</strong>
+												<select class="form-control btn btn-default">
+												  <option><a href="">按计划开始时间排序 &nbsp;&nbsp;&nbsp;</a></option>
+												  <option><a href="">按计划结束时间排序 &nbsp;&nbsp;&nbsp;</a></option>
+												</select>
+												<strong>部门：</strong>
+												<div class="dropdown form-controlindex" >
+												  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+												    所有部门 &nbsp;&nbsp;&nbsp;
+												    <span class="caret"></span>
+												  </button>
+												  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="height:150px;overflow:scroll">
+												    <li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+												    <li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+													<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+												    <li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+													<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+												    <li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+													<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+													<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+												  </ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<table class="table">
+												<thead>
+													<tr>
+													<th>项目编号</th>
+													<th>项目名称</th>
+													<th>计划开始时间</th>
+													<th>计划结束时间</th>
+													<th>项目状态</th>
+												</tr>
+												</thead>
+												
+												<tr>
+													<td>20150001</td>
+													<td><a>深圳市标准信息公共服务平台————标准综合应用服务门户</a></td>
+													<td>2015-03-02</td>
+													<td>2015-06-01</td>
+													<td><button class="btn btn-success btn-xs" type="submit">正在进行</button></td>
+												</tr>
+												<tr>
+													<td>20150002</td>
+													<td><a>跨资源统一标准信息检索平台</a></td>
+													<td>2015-03-02</td>
+													<td>2015-08-06</td>
+													<td><button class="btn btn-danger btn-xs" type="submit">已经延期</button></td>
+												</tr>
+												<tr>
+													<td>20150003</td>
+													<td><a>公文调度站场智能化配套设施技术规范</a></td>
+													<td>2015-10-12</td>
+													<td>2016-01-08</td>
+													<td><button class="btn btn-primary btn-xs" type="submit">已经结束</button></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							    <div role="tabpanel" class="tab-pane" id="settings">
+									<div>	<!-- 统计信息模块 -->
+									
+									  <!-- Nav tabs -->
+									  <ul class="nav nav-tabs nav-pills" role="tablist">
+									    <li role="presentation" class="active"><a href="#xinzeng" aria-controls="xinzeng" role="tab" data-toggle="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新增项目统计&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+									    <li role="presentation"><a href="#leibie" aria-controls="leibie" role="tab" data-toggle="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目类别统计&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+									    <li role="presentation"><a href="#cengji" aria-controls="cengji" role="tab" data-toggle="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项目层级统计&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+									    <li role="presentation"><a href="#bumen" aria-controls="bumen" role="tab" data-toggle="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部门项目统计&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+									    <li role="presentation"><a href="#caiwu" aria-controls="caiwu" role="tab" data-toggle="tab">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;部门财务统计&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+									  </ul>
+									
+									  <!-- Tab panes -->
+									  <div class="tab-content">
+									    <div role="tabpanel" class="tab-pane active" id="xinzeng">
+											<div class="form-inline xiangmutongji">
+												<strong>部门：</strong>
+												<div class="dropdown form-controlindex" >
+													<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+														所有部门 &nbsp;&nbsp;&nbsp;
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownmenu2" style="height:150px;overflow:scroll">
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+													</ul>
+												</div>
+											</div>
+											<textarea class="form-control" rows="20" placeholder="1"></textarea>
+											
+											
+										</div>
+									    <div role="tabpanel" class="tab-pane" id="leibie">
+											<div class="form-inline xiangmutongji">
+												<strong>部门：</strong>
+												<div class="dropdown form-controlindex" >
+													<button class="btn btn-default dropdown-toggle" type="button" id="dropdown-menu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+														所有部门 &nbsp;&nbsp;&nbsp;
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdown-menu2" style="height:150px;overflow:scroll">
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+													</ul>
+												</div>
+											</div>
+											<textarea class="form-control" rows="20" placeholder="2"></textarea>
+										</div>
+									    <div role="tabpanel" class="tab-pane" id="cengji">
+											<div class="form-inline xiangmutongji">
+												<strong>部门：</strong>
+												<div class="dropdown form-controlindex" >
+													<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+														所有部门 &nbsp;&nbsp;&nbsp;
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu" aria-labelledby="dropdownmenu3" style="height:150px;overflow:scroll">
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">院办公室(科技办) &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+														<li><a href="#">IT中心 &nbsp;&nbsp;&nbsp;</a></li>
+													</ul>
+												</div>
+											</div>
+											<textarea class="form-control" rows="20" placeholder="3"></textarea>
+											
+										</div>
+									    <div role="tabpanel" class="tab-pane" id="bumen">
+											<textarea class="form-control textinput" rows="20" placeholder="4"></textarea>
+											
+										</div>
+									    <div role="tabpanel" class="tab-pane" id="caiwu">
+											<textarea class="form-control textinput" rows="20" placeholder="5"></textarea>
+										</div>
+									  </div>
+									
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="system">
+									<div class="row">
+										<div class="col-md-12">
+											<table class="table">
+												<thead>
+													<tr>
+													<th>系统名称</th>
+													<th>系统编号</th>
+													<th>系统级别</th>
+													<th>系统状态</th>
+												</tr>
+												</thead>
+												
+												<tr>
+													<td><a>深圳市标准信息公共服务平台————标准综合应用服务门户</a></td>
+													<td>66001</td>
+													<td>一级系统</td>
+													<td>立项</td>
+												</tr>
+												<tr>
+													<td><a>单点登陆系统</a></td>
+													<td>66002</td>
+													<td>一级系统</td>
+													<td>立项</td>
+												</tr><tr>
+													<td><a>青岛院统计台</a></td>
+													<td>66003</td>
+													<td>一级系统</td>
+													<td>立项</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							  </div>
+							
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="panel panel-default">
+							  <div class="panel-heading"><strong>快速导航</strong></div>
+							  <div id="navi" class="panel-body tab-content">
+									<div class="row">
+									    <a href="NEW.html">
+									      <img  class=" col-md-6" src="img/NEW.png" alt="...">
+									    </a>
+										<a href="collection.html">
+										  <img  class=" col-md-6" src="img/collection.png" alt="...">
+										</a>
+									</div>
+									<div class="row">
+									    <a href="application.html">
+									      <img  class=" col-md-6" src="img/application.png" alt="...">
+									    </a>
+										<a href="application.html">
+										  <img  class=" col-md-6" src="img/application2.png" alt="...">
+										</a>
+									</div>
+									<div class="row">
+									    <a href="audit.html">
+									      <img  class=" col-md-6" src="img/audit.png" alt="...">
+									    </a>
+										<a href="system.html">
+										  <img  class=" col-md-6" src="img/system.png" alt="...">
+										</a>
+									</div>
+									<div class="row">
+									    <a href="option.html">
+									      <img  class=" col-md-6" src="img/option.png" alt="...">
+									    </a>
+									</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div id="end-btn" class="text-center">
+						<!-- Small modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">关于</button>
+						
+						<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+						  <div class="modal-dialog modal-sm" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						              <h4 class="modal-title" id="myModalLabel">关于制作者与本次考试</h4>
+						            </div>
+						            <div class="modal-body">
+										<div class="text-justify">
+											<abbr title="制作者">Designer</abbr>：袁衡鑫
+											<br>
+											<abbr title="班级">Class</abbr>：计算机184班
+											<br>
+											本次考试了解了更多系统制作网页时所遇到的问题，相信下次制作时会更得心应手
+										</div>
+						              
+						            </div>
+						            <div class="modal-footer">
+						              <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						              <button type="button" class="btn btn-primary">了解更多</button>
+						            </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				
+			</container>
+		</section>
+		
+		
+		
+
+		<!-- 页脚 -->
+		
+		<footer id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="text-center">
+						<p>Designed By 恒星同学提不起劲</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		
+		
+		
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="js/wow.min.js"></script>
+		<script>
+			$(function(){
+				// // 导航跳转插件
+				// $('.nav__item').singlePageNav({
+				// 	offset: 70
+				// });
+				// 小屏幕导航点击关闭
+				$('.navbar-collapse a').click(function(){
+					$('.navbar-collapse').collapse('hide');
+				})
+				new WOW().init();
+			})
+		</script>
+	</body>
+</html>

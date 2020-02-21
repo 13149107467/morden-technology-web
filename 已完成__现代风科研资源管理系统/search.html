@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		
+		<!-- IE8标准渲染 -->
+		<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+		
+		<!-- 视窗格式 -->
+		<meta name="viewport" content="device-width,inital-scale=1,user-scalable=no"/>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		
+		<!-- 自定义css样式 -->
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<title>现代科技</title>
+	</head>
+	<body>
+		
+		<!-- 导航 -->
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.html">科研资源管理共享平台</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <form class="navbar-form navbar-left">  <!-- 搜素栏 -->
+		        <div class="col-lg-12">
+		            <div class="input-group">
+						<span class="input-group-addon glyphicon glyphicon-search" id="sizing-addon1"></span>
+						<input type="text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<a href="search.html" class="btn btn-default" type="button">搜索</a>
+						</span>
+		            </div><!-- /input-group -->
+		        </div><!-- /.col-lg-6 -->
+		      </form>
+		      <ul class="nav navbar-nav">
+		        <li><a href="#">高级搜素 <span class="sr-only">(current)</span></a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 用户名</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<container id="content">
+			<div class="container">
+				<div class="row">
+					搜到4个相关的项目：
+				</div>
+				<div class="panel panel-search">
+				  <div class="panel-body">
+				    <h4>
+						深圳市标准信息公共服务平台————标准综合应用服务门户
+				    </h4>
+					<a href="" class="btn btn-search">牵头部门：标准信息研究中心</a>
+					<a href="" class="btn btn-search">负责人：肖永舒</a>
+					<a href="" class="btn btn-search">开始时间：2015-02-01</a>
+					<a href="" class="btn btn-search">项目状态：进行中</a>
+				  </div>
+				</div>
+				<div class="panel panel-search">
+				  <div class="panel-body">
+				    <h4>
+						跨资源统计标准信息检索平台
+				    </h4>
+					<a href="" class="btn btn-search">牵头部门：标准信息研究中心</a>
+					<a href="" class="btn btn-search">负责人：吕勇</a>
+					<a href="" class="btn btn-search">开始时间：2015-02-01</a>
+					<a href="" class="btn btn-search">项目状态：已结束</a>
+				  </div>
+				</div>
+			</div>
+			
+		</container>
+		
+		
+		<!-- 页脚 -->
+		
+		<footer id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="text-center">
+						<p>Designed By 恒星同学提不起劲</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		
+		
+		
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script src="js/wow.min.js"></script>
+		<script>
+			$(function(){
+				// // 导航跳转插件
+				// $('.nav__item').singlePageNav({
+				// 	offset: 70
+				// });
+				// 小屏幕导航点击关闭
+				$('.navbar-collapse a').click(function(){
+					$('.navbar-collapse').collapse('hide');
+				})
+				new WOW().init();
+			})
+		</script>
+	</body>
+</html>

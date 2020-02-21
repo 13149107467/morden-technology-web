@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		
+		<!-- IE8标准渲染 -->
+		<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+		
+		<!-- 视窗格式 -->
+		<meta name="viewport" content="device-width,inital-scale=1,user-scalable=no"/>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" >
+		
+		<!-- 自定义css样式 -->
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<title>现代科技</title>
+	</head>
+	<body>
+		
+		
+		<!-- 导航 -->
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.html">科研资源管理共享平台</a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <form class="navbar-form navbar-left">  <!-- 搜素栏 -->
+		        <div class="col-lg-12">
+		            <div class="input-group">
+						<span class="input-group-addon glyphicon glyphicon-search" id="sizing-addon1"></span>
+						<input type="text" class="form-control" placeholder="站内搜索">
+						<span class="input-group-btn">
+							<a href="search.html" class="btn btn-default" type="button">搜索</a>
+						</span>
+		            </div><!-- /input-group -->
+		        </div><!-- /.col-lg-6 -->
+		      </form>
+		      <ul class="nav navbar-nav">
+		        <li><a href="#">高级搜素 <span class="sr-only">(current)</span></a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+		        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 用户名</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="panel panel-default">
+						  <div class="panel-heading">系统设定</div>
+						  <div id="latest" class="panel-body">
+						    <!-- Nav tabs -->
+						    <ul class="nav nav-tabs nav-pills2" role="tablist">
+						      <li role="presentation" class="col-md-12 active"><a href="#xinzeng" aria-controls="xinzeng" role="tab" data-toggle="tab">系统角色管理</a></li>
+						      <li role="presentation" class="col-md-12"><a href="#leibie" aria-controls="leibie" role="tab" data-toggle="tab">项目管理</a></li>
+						      <li role="presentation" class="col-md-12"><a href="#cengji" aria-controls="cengji" role="tab" data-toggle="tab">参与单位</a></li>
+						      <li role="presentation" id="latestli" class="col-md-12"><a href="#bumen" aria-controls="bumen" role="tab" data-toggle="tab">承接单位</a></li>
+						    </ul>
+						  </div>
+						</div>
+					</div>		<!-- col-md-3 -->
+					<div class="col-md-9">
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="xinzeng">
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#control">
+								  <span class="glyphicon glyphicon-plus"></span>
+								  添加维护成员
+								</button>
+								
+								<!-- Modal -->
+								<div class="modal fade" id="control" tabindex="-1" role="dialog" aria-labelledby="controlLabel">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      
+								      <div class="modal-body">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <br>
+								        <h4 class="text-center">添加维护成员</h4>
+								        <form class="navbar-form navbar-left">  <!-- 搜素栏 -->
+								          <div class="col-lg-12">
+								        	  <div class="input-group">
+								        		<span class="input-group-addon glyphicon glyphicon-search" id="sizing-addon2"></span>
+								        		<input type="text" class="form-control" placeholder="Search for...">
+								        		<span class="input-group-btn">
+								        			<a href="#" class="btn btn-default" type="button">搜索</a>
+								        		</span>
+								        	  </div><!-- /input-group -->
+								          </div><!-- /.col-lg-12 -->
+								        </form>
+								        <div>
+								        	  <table class="table table-bordered">
+								        		  <thead>
+								        			  <tr>
+								        				<th>姓名</th>
+								        				<th>部门</th>
+								        				<th>职位</th>
+								        				<th>手机</th>
+								        				<th>域账户</th>
+								        				<th>操作</th>
+								        			  </tr>
+								        		  </thead>
+								        		  <tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>
+															<button type="button" class="btn btn-apl btn-xs">
+															  <strong>添加</strong>
+															</button>
+														</th>
+								        		  </tr>
+												  <tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>
+															<button type="button" class="btn btn-apl btn-xs">
+															  <strong>添加</strong>
+															</button>
+														</th>
+								        		  </tr>
+												  <tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>
+															<button type="button" class="btn btn-apl btn-xs">
+															  <strong>添加</strong>
+															</button>
+														</th>
+								        		  </tr>
+												  <tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>
+															<button type="button" class="btn btn-apl btn-xs">
+															  <strong>添加</strong>
+															</button>
+														</th>
+								        		  </tr>
+												  <tr>
+														<th>1</th>
+														<th>2</th>
+														<th>3</th>
+														<th>4</th>
+														<th>5</th>
+														<th>
+															<button type="button" class="btn btn-apl btn-xs">
+															  <strong>添加</strong>
+															</button>
+														</th>
+								        		  </tr>
+								        	  </table>
+								        	  <p class="text-right">显示第1到5条记录，总共68条记录</p>
+								        	  <div class="text-center">
+								        		<nav aria-label="Page navigation">
+								        		  <ul class="pagination">
+								        			<li>
+								        			  <a href="#" aria-label="Previous">
+								        				<span aria-hidden="true">&laquo;</span>
+								        			  </a>
+								        			</li>
+								        			<li class="active"><a href="#">1</a></li>
+								        			<li><a href="#">2</a></li>
+								        			<li><a href="#">3</a></li>
+								        			<li><a href="#">4</a></li>
+								        			<li><a href="#">5</a></li>
+								        			<li>
+								        			  <a href="#" aria-label="Next">
+								        				<span aria-hidden="true">&raquo;</span>
+								        			  </a>
+								        			</li>
+								        		  </ul>
+								        		</nav>
+								        	  </div>
+								        </div>
+								      </div>
+								      
+								    </div>
+								  </div>
+								</div>
+								<div class="panel panel-default2 application">
+								  <div class="panel-heading">系统角色</div>
+								  <div class="panel-body">
+										
+										<table class="table">
+											<thead>
+												<tr>
+													<td>姓名</td>
+													<td>部门</td>
+													<td>职位</td>
+													<td>手机</td>
+													<td>域账户</td>
+													<td>角色</td>
+													<td>操作</td>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+												<td>
+													<select >
+													  <option>超级管理员</option>
+													  <option>信息系统管理员</option>
+													  <option>科技办审核人员</option>
+													</select>
+												</td>
+												<td>
+													<button class="btn btn-apl btn-xs" type="submit"><strong>保存</strong></button>
+													<button class="btn btn-xs" type="submit"><strong>删除</strong></button>
+												</td>
+											</tr>
+											
+										</table>
+								  </div>
+								</div>
+								
+							</div>
+							<div role="tabpanel" class="tab-pane" id="leibie">
+								
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#laiyuan">
+								  <span class="glyphicon glyphicon-plus"></span>
+								  添加项目来源
+								</button>
+								
+								<!-- Modal -->
+								<div class="modal fade" id="laiyuan" tabindex="-1" role="dialog" aria-labelledby="laiyuanLabel">
+								  <div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								      
+								      <div class="modal-body">
+								        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								        <br>
+								        <h4 class="text-center">添加项目来源</h4>
+								        <form>
+								          <div class="form-group">
+								            <label for="exampleInputEmail1">单位</label>
+								            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入名称">
+								          </div>
+								          <div class="form-group">
+								            <label for="exampleInputPassword1">层级</label>
+								            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入层级">
+								          </div>
+										  <div class="text-center">
+											<button type="submit" class="btn btn-default">提交</button>
+										  </div>
+								        </form>
+								      </div>
+								      
+								    </div>
+								  </div>
+								</div>
+								
+								<div class="panel panel-default2 application">
+								  <div class="panel-heading">项目来源</div>
+								  <div class="panel-body">
+										
+										<table class="table">
+											<thead>
+												<tr>
+													<td>层级</td>
+													<td>单位</td>
+													<td>操作</td>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>2</td>
+												<td>
+													<button class="btn btn-xs" type="submit"><strong>删除</strong></button>
+												</td>
+											</tr>
+											
+										</table>
+								  </div>
+								</div>
+								
+							</div>
+							<div role="tabpanel" class="tab-pane" id="cengji">
+								<button type="button" class="btn btn-default btn-lg">
+									  <span class="glyphicon glyphicon-plus"></span>
+										添加参与单位
+								  </button>
+								<div class="panel panel-default2 application">
+									<div class="panel-heading">参与单位</div>
+									<div class="panel-body">
+										<table class="table">
+											<thead>
+												<tr>
+													<td>层级</td>
+													<td>单位</td>
+													<td>操作</td>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>2</td>
+												<td>
+													<button class="btn btn-xs" type="submit"><strong>删除</strong></button>
+												</td>
+											</tr>
+											
+										</table>
+								  </div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="bumen">
+								<button type="button" class="btn btn-default btn-lg">
+									  <span class="glyphicon glyphicon-plus"></span>
+										添加承接单位
+								  </button>
+								<div class="panel panel-default2 application">
+									<div class="panel-heading">承接单位</div>
+									<div class="panel-body">
+										<table class="table">
+											<thead>
+												<tr>
+													<td>层级</td>
+													<td>单位</td>
+													<td>操作</td>
+												</tr>
+											</thead>
+											<tr>
+												<td>1</td>
+												<td>2</td>
+												<td>
+													<button class="btn btn-xs" type="submit"><strong>删除</strong></button>
+												</td>
+											</tr>
+										</table>
+								  </div>
+							</div>
+							
+						</div>
+						</div>		<!-- table-content -->
+					</div>		<!-- col-md-9 -->
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		<!-- 页脚 -->
+		
+		<footer id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="text-center">
+						<p>Designed By 恒星同学提不起劲</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		
+		
+		
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				// // 导航跳转插件
+				// $('.nav__item').singlePageNav({
+				// 	offset: 70
+				// });
+				// 小屏幕导航点击关闭
+				$('.navbar-collapse a').click(function(){
+					$('.navbar-collapse').collapse('hide');
+				})
+				new WOW().init();
+			})
+		</script>
+		
+	</body>
+</html>

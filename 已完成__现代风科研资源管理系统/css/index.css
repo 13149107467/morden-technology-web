@@ -1,0 +1,453 @@
+/* 全局 */
+ body,ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#footer{	/* 当页面内容不够时设置footer的id */
+	position: absolute; /*相对于父元素contanier定位*/
+	width: 100%;
+	bottom: 0;/*始终距离它的父元素的底部为0px.则是处于父元素的最底*/
+	/* 缺点是会根据屏幕大小出现footer粘在屏幕下方的情况 */
+}
+#latestli{
+	margin-bottom: 10px;
+}
+#tabcontent{
+	padding: 10px;
+	height: 510px;
+	border-left: gainsboro solid 1px;
+	border-right: gainsboro solid 1px;
+	border-bottom: gainsboro solid 1px;
+}
+#navi{
+	border-top: gainsboro solid 1px;
+	border-left: gainsboro solid 1px;
+	border-right: gainsboro solid 1px;
+	border-bottom: gainsboro solid 1px;
+}
+.panel-default2{
+	border-color:#ddd
+}
+.panel-default2>.panel-heading{
+	color:#333;
+	background-color:#f5f5f5;
+	border-color:#ddd
+}
+.panel-default2>.panel-heading+.panel-collapse>.panel-body{
+	border-top-color:#ddd
+}
+.panel-default2>.panel-heading .badge{
+	color:#f5f5f5;
+	background-color:#333
+}
+.panel-default2>.panel-footer+.panel-collapse>.panel-body{
+	border-bottom-color:#ddd
+}
+.panel-default {
+	border-color: #fff;
+}
+.panel-default>.panel-heading {
+	padding:3px 15px;
+    color: #0A60DB;
+	font-size: 17px;
+    background-color: #ffffff;
+    border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+    border-left: 3px solid transparent;
+    border-color: #fff;
+	border-left-color: #0A60DB;
+	margin-bottom: 8px;
+}
+.form-controlindex {
+    display: inline;
+    width: 100%;
+    height: 34px;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left;
+}
+textarea.form-control{ /* 多行文本框的样式 */ 
+	border-color: #ddd;
+}
+
+/* nav */
+.navbar-default {
+    background-color: #0072c0;
+    border-color: #0072c0;
+	border-radius: 0;/*去圆角*/
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-brand:hover{
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: #FFFFFF;
+}
+.input-group-addon {	/* 搜索符号颜色 */
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    background-color: #2675e8;
+    border: 0px;
+    border-radius: 0;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #3686fa;
+}
+.nav-pills>li>a {
+    border-radius: 0;
+	margin-right: 0;
+	margin-left: 0;
+	line-height: 0.7;
+	border: 1px solid transparent;
+	background-color: #e8e8e8;
+}
+.nav-pills>li+li {
+    margin-left: 0px;
+}
+.nav-pills2>li{
+	padding: 0px;
+}
+.nav-pills2>li.active>a,
+.nav-pills2>li.active>a:focus,
+.nav-pills2>li.active>a:hover {
+    color: #fff;
+    background-color: #3686fa;
+}
+.nav-pills2>li>a {
+    border-radius: 0;
+	margin-right: 0;
+	margin-left: 0;
+	line-height: 1;
+	border: 1px solid transparent;
+	background-color: #ffffff;
+}
+.nav-pills2>li+li {
+    margin-left: 0px;
+}
+
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+	background-color: #2b7bef;
+}
+
+
+
+/* btn 设置 */
+.btn-default {
+    color: #ffffff;
+    background-color: #2b7bef;
+	border-radius: 0;
+    border-color: #2b7bef;
+}
+.btn-default:hover {
+    color: #ede6e6;
+    background-color: #2b7bef;
+	border-radius: 0;
+    border-color: #2b7bef;
+}
+.btn-success {
+    color: #ffffff;
+    background-color: #2c8952;
+	border-radius: 0;
+    border-color: #2c8952;
+}
+.btn-danger {
+    color: #ffffff;
+    background-color: #b84907;
+	border-radius: 0;
+    border-color: #b84907;
+}
+.btn-danger:hover {
+    color: #ffffff;
+    background-color: #b84907;
+	border-radius: 0;
+    border-color: #b84907;
+}
+/* 重新定义btn-primary */
+.btn-primary{
+	color:#fff;
+	background-color:#787978;
+	border-color:#787978;
+	border-radius: 0;
+	}
+.btn-primary.focus,.btn-primary:focus{
+	color:#fff;
+	background-color:#787978;
+	border-color:#787978;
+	}
+.btn-primary:hover{
+	color:#fff;
+	background-color:#787978;
+	border-color:#787978;
+	}
+.btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-primary{
+	color:#fff;
+	background-color:#787978;
+	border-color:#787978;
+	}
+.btn-primary.active.focus,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active.focus,.btn-primary:active:focus,.btn-primary:active:hover,.open>.dropdown-toggle.btn-primary.focus,.open>.dropdown-toggle.btn-primary:focus,.open>.dropdown-toggle.btn-primary:hover{
+	color:#fff;
+	background-color:#787978;
+	border-color:#787978;
+	}
+.btn-primary.active,.btn-primary:active,.open>.dropdown-toggle.btn-primary{
+	background-image:none
+	}
+.btn-primary.disabled.focus,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled].focus,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary.focus,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover{
+	background-color:#787978;border-color:#787978
+}
+.btn-primary .badge{
+	color:#337ab7;
+	background-color:#fff
+}
+#navi>.row>a>img{		/* 优化导航栏样式 */
+	margin-bottom: 10px;
+}
+.btn-search {		/* 搜索分类 */
+	line-height: 0.7;
+	margin-top: 7px;
+    color: #ffffff;
+    background-color: #43b5ff;
+	border-radius: 0;
+    border-color: #43b5ff;
+}
+.btn-search:hover {
+    color: #ede6e6;
+    background-color: #43b5ff;
+	border-radius: 0;
+    border-color: #43b5ff;
+}
+.btn-new {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-new:focus,
+.btn-new.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-new:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-new:active,
+.btn-new.active,
+.open > .dropdown-toggle.btn-new {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-new:active:hover,
+.btn-new.active:hover,
+.open > .dropdown-toggle.btn-new:hover,
+.btn-new:active:focus,
+.btn-new.active:focus,
+.open > .dropdown-toggle.btn-new:focus,
+.btn-new:active.focus,
+.btn-new.active.focus,
+.open > .dropdown-toggle.btn-new.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.btn-new:active,
+.btn-new.active,
+.open > .dropdown-toggle.btn-new {
+  background-image: none;
+}
+.btn-new.disabled:hover,
+.btn-new[disabled]:hover,
+fieldset[disabled] .btn-new:hover,
+.btn-new.disabled:focus,
+.btn-new[disabled]:focus,
+fieldset[disabled] .btn-new:focus,
+.btn-new.disabled.focus,
+.btn-new[disabled].focus,
+fieldset[disabled] .btn-new.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-new .badge {
+  color: #fff;
+  background-color: #333;
+}
+#end-btn{
+	margin-top: 30px;
+}
+
+
+
+/* 申请界面按钮 */
+.btn-apl{
+	color:#fff;
+	background-color:#0e97e9;
+	border-color:#0e97e9;
+}
+.btn-apl.focus,.btn-apl:focus{
+	color:#fff;
+	background-color:#0e97e9;
+	border-color:#0e97e9;
+}
+.btn-apl:hover{
+	color:#fff;
+	background-color:#0e97e9;
+	border-color:#0e97e9
+}
+.btn-apl.active,
+.btn-apl:active,
+.open>.dropdown-toggle.btn-apl{
+	color:#fff;
+	background-color:#286090;
+	border-color:#204d74
+}
+.btn-apl.active.focus,
+.btn-apl.active:focus,
+.btn-apl.active:hover,
+.btn-apl:active.focus,
+.btn-apl:active:focus,
+.btn-apl:active:hover,
+.open>.dropdown-toggle.btn-apl.focus,
+.open>.dropdown-toggle.btn-apl:focus,
+.open>.dropdown-toggle.btn-apl:hover{
+	color:#fff;
+	background-color:#204d74;
+	border-color:#122b40
+}
+.btn-apl.active,
+.btn-apl:active,
+.open>.dropdown-toggle.btn-apl{
+	background-image:none
+}
+.btn-apl.disabled.focus,
+.btn-apl.disabled:focus,
+.btn-apl.disabled:hover,
+.btn-apl[disabled].focus,
+.btn-apl[disabled]:focus,
+.btn-apl[disabled]:hover,
+fieldset[disabled] .btn-apl.focus,
+fieldset[disabled] .btn-apl:focus,
+fieldset[disabled] .btn-apl:hover{
+	background-color:#337ab7;
+	border-color:#2e6da4
+}
+.btn-apl .badge{
+	color:#337ab7;
+	background-color:#fff
+}
+.btn-group-xs>.btn, .btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 0px;
+}
+.btn-orange{
+	color: #FFFFFF;
+	background-color: #f57f17;
+}
+.btn-orange:hover{
+	color: #FFFFFF;
+	background-color: #f57f17;
+}
+
+
+
+/* 表单中的a标签*/
+td>a{
+	color: #000000;
+}
+td>a:hover{
+	color: #000000;
+}
+/* 表单中的p标签 */
+#dep{
+	margin: 5px 10px 10px 5px;
+	font-size: 20px;
+	color: #0A60DB;
+}
+
+/* 首页>统计信息>新增项目统计 */
+.xiangmutongji{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.textinput{
+	margin-top: 10px;
+}
+
+/* 搜索界面>面板 */
+.panel-search {
+    border-color: #fff;
+    background-color: #f3f3f3;
+}
+
+
+/* 快速导航类通用 */
+.head{
+	font-size: 20px;
+	font-weight: 900;
+	color: #2883bb;
+}
+
+
+/* 我的申请界面 */
+.application{
+	margin-top: 20px;
+	border-radius: 0;
+}
+
+/* 系统设定 */
+#latest{
+	padding: 0px;
+}
+
+/* 页脚 */
+footer>.container-fluid{
+	height: 50px;
+	margin-top: 1.875rem;
+	padding: 30px;
+	background-color: #c0c0c0;
+}
+footer>.container-fluid p{
+	color: #FFFFFF;
+}
